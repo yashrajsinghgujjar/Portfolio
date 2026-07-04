@@ -1,0 +1,11 @@
+import time
+Name=input("Please enter your name : ")
+Money = int(input("Enter the money you want to submit : "))
+Interest = int(input("Enter the Interest Rate of per Month: "))
+month = int(input("Enter the month You need of : "))
+Calculation = Money *(1 - Interest / 100)
+interest= (Money-Calculation)
+time.sleep(2)
+print(f"Total Amount in rupees:{month*interest}")
+time.sleep(3)
+print (f"Mr/Mrs.{Name} Thank you ! for using the interest calculator. ")

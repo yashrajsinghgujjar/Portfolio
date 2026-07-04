@@ -1,0 +1,173 @@
+/* Universal Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video Styling */
+video {
+    position: fixed; /* Video covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the area without distortion */
+    z-index: -1; /* Puts the video behind all other content */
+    filter: brightness(0.6); /* Makes the video darker so text is readable */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: flex-end; /* Links ko right side me align karein */
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: white;
+}
+
+header .logo {
+    /* Logo space ke liye */
+    flex-grow: 1; 
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Links ke beech space */
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff7e8b; /* Zomato-like hover color */
+}
+
+/* Main Content (Hero Section) Styling */
+main section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh; /* Takes up most of the viewport height */
+    color: white;
+}
+
+/* Zomato Logo in Hero Section */
+main section:first-child img {
+    width: 250px; 
+    margin-bottom: 20px;
+}
+
+/* Tagline Text */
+main section:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Search Input Styling */
+main section:first-child input {
+    width: 60%;
+    max-width: 700px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* --- Info Section Styling (.info-section) --- */
+.info-section {
+    background-color: white;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.info-section h2 {
+    color: #ff7e8b;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    color: #333;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* --- New CSS for Service Cards --- */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.service-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(255, 126, 139, 0.2);
+}
+
+.service-card img {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #ff7e8b;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7e8b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #e06c79;
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}

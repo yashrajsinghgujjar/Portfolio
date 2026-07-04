@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj Gurjar | Portfolio</title>
+    <link rel="icon" type="image/png" href="Portfolio.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- सबसे ऊपर यह लाइन होनी चाहिए -->
+    <canvas id="space-canvas"></canvas>
+    <nav class="navbar">
+        <a href="#home" class="logo-image-container">
+            <img src="logo.png" alt="Yashraj Logo" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Yashraj Gurjar</h1>
+            <h3>I'm an <span class="text-animate">Aspiring AI/ML Developer</span></h3>
+            <p>Ambitious developer with a strong foundation in Python (Pandas) and currently mastering Frontend Web Development using HTML, CSS, and JavaScript. Driven by a passion for building interactive web applications and leveraging data-driven insights.</p>
+            
+            <div class="social-icons">
+                <a href="https://github.com/yashrajsinghgujjar/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yashrajsinghgujjar/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/yashrajsinghgujjar/" target="_blank" title="Instagram" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="home-buttons" style="display: flex; gap: 1.5rem; align-items: center;">
+                <a href="#contact" class="btn">Reach Me</a>
+                <a href="#" class="proj-btn" style="padding: 0.7rem 1.8rem; border-radius: 0.5rem; display: inline-flex; align-items: center; gap: 0.5rem;" 
+                   onclick="event.preventDefault(); window.open('Yashraj.pdf', '_blank');">
+                    <i class="fas fa-file-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+        <!-- RIGHT SIDE KI PHOTO — YEH NAYA JUD RAHA HAI -->
+        <div class="home-image">
+            <img src="Yash.png" alt="Yashraj Gurjar">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <p>Based in Gwalior, Madhya Pradesh, I am a dedicated college student passionate about computer science, problem-solving, and open-source contributions. Beyond technical life, I actively enjoy playing Cricket, Chess, and Kabaddi.</p>
+            
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <h4><i class="fas fa-bullseye"></i> Short-Term Goal</h4>
+                    <p>Secure an internship to master Frontend Web Development while building expertise in Python (Pandas), enabling a future transition to Backend Development.</p>
+                </div>
+                <div class="goal-card">
+                    <h4><i class="fas fa-trophy"></i> Long-Term Goal</h4>
+                    <p>Become a technology entrepreneur, specializing in Artificial Intelligence and Machine Learning (AI/ML), utilizing a strong Python foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="education-timeline">
+            <div class="edu-card">
+                <span class="year">2024 - 2028</span>
+                <h3>Bachelor of Technology (Computer Science)</h3>
+                <h4>Shri Ram Institute of Information Technology (SRIIT)</h4>
+                <p>Currently pursuing my B.Tech degree, focusing on core computer science subjects, maintaining a consistent academic record, and applying theoretical knowledge to practical projects.</p>
+                <div class="scores-container">
+                    <div class="score-card">
+                        <div class="score-value">7.14</div>
+                        <div class="score-label">Sem 1 SGPA</div>
+                    </div>
+                    <div class="score-card">
+                        <div class="score-value">7.38</div>
+                        <div class="score-label">Sem 2 SGPA</div>
+                    </div>
+                    <div class="score-card">
+                        <div class="score-value">7.42</div>
+                        <div class="score-label">Sem 3 SGPA</div>
+                    </div>
+                    <div class="score-card main-cgpa">
+                        <div class="score-value">7.32</div>
+                        <div class="score-label">Current CGPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+        <div class="skills-container" style="max-width: 600px; margin: auto;">
+            <div class="skills-box">
+                <h3>Core Tech Stack</h3>
+                <div class="skills-list">
+                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill-item"><i class="devicon-cplusplus-plain" style="color: var(--main-color); font-size: 1.2rem;"></i> C++</div>
+                    <div class="skill-item"><i class="fab fa-c"></i> C</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> Pandas</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications-section">
+        <h2 class="heading">My <span>Certifications</span></h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-award"></i></div>
+                <div class="cert-info">
+                    <h3>TCS Certification</h3>
+                    <p class="cert-vendor">Tata Consultancy Services</p>
+                    <p class="cert-desc">Recognized foundational knowledge in core industry competencies, software engineering paradigms, and structural problem-solving methodologies.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-lightbulb"></i></div>
+                <div class="cert-info">
+                    <h3>Nexus Innovations Certificate</h3>
+                    <p class="cert-vendor">Atlys Nexus Innovations</p>
+                    <p class="cert-desc">Hands-on technical development exposure, focusing on emerging architectural frameworks, project deployment workflows, and scalable system design.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-chart-line"></i></div>
+                <div class="cert-info">
+                    <h3>Cognifyz IT Solutions Certificate</h3>
+                    <p class="cert-vendor">Cognifyz Internship Program</p>
+                    <p class="cert-desc">Gained practical development experience working on industry-assigned tasks, code optimization, and real-time software solutions.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-robot"></i></div>
+                <div class="cert-info">
+                    <h3>Robot Car Certificate</h3>
+                    <p class="cert-vendor">Hardware-Software Integration Training</p>
+                    <p class="cert-desc">Hands-on experience in building and programming autonomous robot cars, managing sensor data, and micro-controller logic execution.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-code"></i></div>
+                <div class="cert-info">
+                    <h3>C Language Certificate</h3>
+                    <p class="cert-vendor">Programming Fundamentals</p>
+                    <p class="cert-desc">Certified in core C programming, establishing a strong foundation in memory management, data structures, pointers, and algorithmic problem-solving.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-laptop-code"></i></div>
+                <div class="cert-info">
+                    <h3>Ducat Internship Certificate</h3>
+                    <p class="cert-vendor">Ducat Industrial Training</p>
+                    <p class="cert-desc">Completed a rigorous technical internship program, working on real-world development cycles, system architectures, and collaborative code deployment.</p>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon-box"><i class="fas fa-building"></i></div>
+                <div class="cert-info">
+                    <h3>Alfido Tech Internship Certificate</h3>
+                    <p class="cert-vendor">Alfido Tech Development Program</p>
+                    <p class="cert-desc">Acquired workplace software engineering experience, contributing to backend development tasks, system optimization, and testing protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="heading">Recent <span>Projects</span></h2>
+        <div class="projects-grid">
+            
+            <div class="project-card" style="border-color: #ff7e8b;">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-utensils project-icon" style="color: #ff7e8b;"></i>
+                        <h4>Zomato Web Architecture Clone</h4>
+                    </div>
+                    <p class="project-desc">A premium frontend multi-page web application replicating the user journey interface of Zomato, featuring immersive background video streams and structural micro-service card grids.</p>
+                    <div class="tech-badges">
+                        <span style="background:rgba(255,126,139,0.1); color:#ff7e8b; border-color:rgba(255,126,139,0.2);">HTML5 Multi-Page</span>
+                        <span style="background:rgba(255,126,139,0.1); color:#ff7e8b; border-color:rgba(255,126,139,0.2);">CSS3 Responsive Grid</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle" style="color: #ff7e8b;"></i> Full-screen HTML5 canvas background video stream with custom tracking.</li>
+                        <li><i class="fas fa-check-circle" style="color: #ff7e8b;"></i> Independent dynamic multi-card module interface managing structural flex arrays.</li>
+                    </ul>
+                    <div class="project-links" style="margin-top: 1.5rem;">
+                        <a href="./Zomato Clone/index.html" target="_blank" class="proj-btn" style="border-color: #ff7e8b !important; color: #ff7e8b !important;"><i class="fas fa-external-link-alt"></i> Open Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" style="border-color: #38bdf8;">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-car project-icon" style="color: #38bdf8;"></i>
+                        <h4>Futuristic Car Driving Game</h4>
+                    </div>
+                    <p class="project-desc">A fast-paced JavaScript 2D simulation game featuring dynamic obstacle generation, collision logic parameters, and interactive key tracking listeners.</p>
+                    <div class="tech-badges">
+                        <span style="background:rgba(56,189,248,0.1); color:#38bdf8; border-color:rgba(56,189,248,0.2);">HTML5 Canvas</span>
+                        <span style="background:rgba(56,189,248,0.1); color:#38bdf8; border-color:rgba(56,189,248,0.2);">JavaScript DOM</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle" style="color: #38bdf8;"></i> Engineered requestAnimationFrame event loop for smooth multi-lane obstacle rendering.</li>
+                    </ul>
+                    <div class="project-links" style="margin-top: 1.5rem;">
+                        <a href="./Racing Car Game/index.html" target="_blank" class="proj-btn" style="border-color: #38bdf8 !important; color: #38bdf8 !important;"><i class="fas fa-gamepad"></i> Play Game</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-download project-icon"></i>
+                        <h4>Automated Media Downloader</h4>
+                    </div>
+                    <p class="project-desc">A highly efficient Python automation script built utilizing advanced CLI inputs to securely download high-quality videos directly from URL streams.</p>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>yt-dlp Engine</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Integrated the industry-grade yt_dlp engine to parse media links dynamically.</li>
+                    </ul>
+                    <div class="project-links"><a href="./Youtube Vedio Downlaod.py" download class="proj-btn"><i class="fas fa-file-code"></i> Source Code</a></div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-calculator project-icon"></i>
+                        <h4>Indian Income Tax Calculator</h4>
+                    </div>
+                    <p class="project-desc">A financial automation utility designed to evaluate dynamic salary brackets in India, applying programmatic conditional logical structures to compute direct tax deductions.</p>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>Conditional Logic</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Engineered nested if-elif slabs ranging from 0% up to 30% tax brackets.</li>
+                    </ul>
+                    <div class="project-links"><a href="./Income Tax Calculate.py" download class="proj-btn"><i class="fas fa-file-code"></i> Source Code</a></div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-file-alt project-icon"></i>
+                        <h4>Academic Leave Application Portal</h4>
+                    </div>
+                    <p class="project-desc">A modern, fully responsive frontend submission form featuring real-time input fields and dynamic DOM state validation loops.</p>
+                    <div class="tech-badges">
+                        <span>HTML5 & CSS3</span>
+                        <span>JavaScript Logic</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Developed a clean, interactive desktop/mobile UI card interface using CSS Flexbox.</li>
+                    </ul>
+                    <div class="project-links"><a href="./Leave Application.html" target="_blank" class="proj-btn"><i class="fas fa-external-link-alt"></i> Open Portal</a></div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-qrcode project-icon"></i>
+                        <h4>Dynamic QR Matrix Generator</h4>
+                    </div>
+                    <p class="project-desc">A dedicated scripting utility built in Python designed to compile text-based string URLs into scannable graphic data matrices.</p>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>QR Code Engine</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Automated conversion of professional digital profiles into scannable QR tokens.</li>
+                    </ul>
+                    <div class="project-links"><a href="./QR Genrate.PY" download class="proj-btn"><i class="fas fa-file-code"></i> Source Code</a></div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-coins project-icon"></i>
+                        <h4>Financial Yield & Interest Tracker</h4>
+                    </div>
+                    <p class="project-desc">A core computation terminal script designed to process monthly rate parameters and yield compound calculations over specified terms.</p>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>Data Casting</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Managed variable safe runtime states using robust integer string data-type casting handlers.</li>
+                    </ul>
+                    <div class="project-links"><a href="./Intrest Rate.py" download class="proj-btn"><i class="fas fa-file-code"></i> Source Code</a></div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <i class="fas fa-hand-rock project-icon"></i>
+                        <h4>Algorithmic RPS Game Module</h4>
+                    </div>
+                    <p class="project-desc">An interactive simulation console game balancing multi-conditional decision parameters against randomized script inputs.</p>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>Random Module</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check-circle"></i> Engineered automated computer adversary tracking utilizing random module options.</li>
+                    </ul>
+                    <div class="project-links"><a href="./RPS Game.py" download class="proj-btn"><i class="fas fa-file-code"></i> Source Code</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <p class="email-text"><i class="fas fa-envelope"></i> Email: yashrajgurjar0001@gmail.com</p>
+            
+<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    
+    <input type="hidden" name="access_key" value="884a22bd-22bb-4a5e-b270-8a64aa3b5cca">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+    <button type="submit" class="btn">Send Message</button>
+</form>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yashraj Gurjar. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

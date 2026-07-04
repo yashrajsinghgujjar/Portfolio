@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    text-decoration: none; border: none; outline: none;
+    scroll-behavior: smooth; font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #0F172A;          /* Deep Slate Blue (Main Page) */
+    --second-bg-color: rgba(30, 41, 59, 0.4);   /* हल्का ट्रांसपेरेंट ग्रे-ब्लू */
+    --text-color: #FFFFFF;        /* Pure White */
+    --body-text-color: #94A3B8;   /* Muted Silver Grey */
+    --main-color: #38BDF8;        /* Electric Sky Blue */
+}
+
+body { 
+    background: var(--bg-color); 
+    color: var(--text-color); 
+    overflow-x: hidden; 
+}
+
+p { color: var(--body-text-color); }
+
+/* Navbar */
+.navbar {
+position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    
+    /* Premium Glassmorphism Look (कांच जैसा पारदर्शी इफेक्ट) */
+    background: rgba(15, 23, 42, 0.6); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Modern Futuristic Border & Glow */
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 100px; /* कैप्सूल शेप */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 
+                0 0 20px rgba(56, 189, 248, 0.05);
+                
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--text-color); }
+.logo span { color: var(--main-color); }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 2rem; }
+.nav-links a { color: var(--text-color); font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: var(--main-color); }
+.menu-btn { display: none; font-size: 1.5rem; cursor: pointer; color: var(--text-color); }
+
+/* Section Configuration */
+section { min-height: 100vh; padding: 7rem 7% 2rem; background: transparent !important; }
+.heading { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--text-color); }
+.heading span { color: var(--main-color); }
+
+/* Home Section (फिक्स किया गया - नो एक्स्ट्रा स्पेस) */
+.home-section { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: transparent !important; 
+    height: 100vh !important; /* स्क्रीन के बीचों-बीच रखेगा */
+    padding: 0 7% !important; /* ऊपर-नीचे की पैडिंग गायब */
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-content { flex: 1; }
+.home-content h1 { font-size: 3.5rem; font-weight: 700; color: var(--text-color); line-height: 1.2; }
+.home-content h3 { font-size: 1.8rem; margin: 0.5rem 0; font-weight: 600; color: var(--text-color); }
+.text-animate { color: var(--main-color); }
+.home-content p { font-size: 1rem; max-width: 650px; margin: 1rem 0 2rem; line-height: 1.6; }
+
+/* Social Icons Setup */
+.social-icons { display: flex; gap: 1rem; margin-bottom: 2rem; }
+.social-icons a {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 2.8rem; height: 2.8rem; background: transparent;
+    border: 2px solid var(--main-color); border-radius: 50%;
+    font-size: 1.3rem; color: var(--main-color); transition: 0.4s ease;
+}
+.social-icons a:hover {
+    background: var(--main-color); color: var(--bg-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+.social-icons a.instagram-icon:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #FFFFFF; border-color: transparent; box-shadow: 0 0 15px #dc2743;
+}
+
+/* Accent Buttons */
+.btn {
+    display: inline-block; padding: 0.7rem 2rem; background: var(--main-color);
+    border-radius: 0.5rem; color: var(--bg-color); font-weight: 600; transition: 0.3s; cursor: pointer;
+}
+.btn:hover { box-shadow: 0 0 15px var(--main-color); }
+
+/* About & Career Goals */
+.about-section { background: transparent !important; }
+.about-container { max-width: 900px; margin: auto; text-align: center; }
+.about-container p { font-size: 1.1rem; line-height: 1.8; }
+.goals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.goal-card { background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 1rem; border: 1px solid #334155; text-align: left; backdrop-filter: blur(5px); }
+.goal-card h4 { font-size: 1.2rem; color: var(--main-color); margin-bottom: 0.5rem; }
+
+/* Education Section */
+.education-timeline { max-width: 800px; margin: auto; }
+.edu-card { background: rgba(30, 41, 59, 0.5); padding: 2.5rem; border-radius: 1rem; border-left: 4px solid var(--main-color); backdrop-filter: blur(5px); border-top: 1px solid #334155; border-right: 1px solid #334155; border-bottom: 1px solid #334155; }
+.edu-card .year { color: var(--main-color); font-weight: 600; }
+.edu-card h3 { margin: 0.5rem 0; color: var(--text-color); }
+.edu-card h4 { color: var(--body-text-color); font-weight: 500; margin-bottom: 1rem; }
+.scores { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem; font-size: 1rem; color: var(--main-color); }
+
+/* Technical Skills Layout */
+.skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.skills-box { background: var(--second-bg-color); padding: 2rem; border-radius: 1rem; border: 1px solid #334155; backdrop-filter: blur(5px); }
+.skills-box h3 { margin-bottom: 1.5rem; color: var(--main-color); border-bottom: 2px solid #334155; padding-bottom: 0.5rem; }
+.skills-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.skill-item { display: flex; align-items: center; gap: 0.5rem; font-size: 1rem; color: var(--text-color); }
+.skill-item i { color: var(--main-color); font-size: 1.2rem; }
+
+/* Dynamic Certifications Grid Layout */
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.cert-card {
+    background: var(--second-bg-color); border: 1px solid rgba(56, 189, 248, 0.1);
+    border-radius: 1.2rem; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; transition: all 0.4s ease; position: relative; overflow: hidden; backdrop-filter: blur(5px);
+}
+.cert-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--main-color); opacity: 0.7; transition: 0.3s; }
+.cert-card:hover { transform: translateY(-8px); border-color: var(--main-color); box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15); }
+.cert-card:hover::before { opacity: 1; box-shadow: 0 0 10px var(--main-color); }
+.cert-icon-box {
+    background: rgba(56, 189, 248, 0.1); color: var(--main-color); padding: 1rem; border-radius: 0.8rem; font-size: 1.5rem; display: flex; justify-content: center; align-items: center; min-width: 50px; height: 50px;
+}
+.cert-info h3 { font-size: 1.25rem; color: var(--text-color); font-weight: 600; margin-bottom: 0.3rem; }
+.cert-vendor { font-size: 0.9rem; color: var(--main-color); font-weight: 500; margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.cert-desc { font-size: 0.95rem; color: var(--body-text-color); line-height: 1.6; }
+
+/* Advanced Projects Grid Styling Layout */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.project-card { background: var(--second-bg-color); border-radius: 1rem; padding: 2rem; border: 1px solid #334155; transition: 0.3s; display: flex; flex-direction: column; backdrop-filter: blur(5px); }
+.project-card:hover { border-color: var(--main-color); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(56, 189, 248, 0.1); }
+.project-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.project-icon { font-size: 1.8rem; color: var(--main-color); }
+.project-desc { margin-bottom: 1.2rem !important; font-size: 0.95rem; line-height: 1.6; }
+.tech-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.tech-badges span {
+    background: rgba(56, 189, 248, 0.1); color: var(--main-color); padding: 0.3rem 0.8rem; border-radius: 2rem; font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(56, 189, 248, 0.2);
+}
+.project-highlights { list-style: none; margin-bottom: 1.5rem; padding-left: 0; }
+.project-highlights li { font-size: 0.9rem; color: var(--body-text-color); margin-bottom: 0.6rem; display: flex; align-items: flex-start; gap: 0.5rem; text-align: left; }
+.project-highlights li i { color: var(--main-color); margin-top: 0.2rem; font-size: 0.95rem; }
+.project-links { margin-top: auto; }
+.proj-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; border: 1px solid var(--main-color) !important; color: var(--main-color) !important; padding: 0.5rem 1.2rem; border-radius: 0.5rem; font-size: 0.9rem; font-weight: 600; transition: 0.3s ease;
+}
+.proj-btn:hover { background: var(--main-color); color: var(--bg-color) !important; box-shadow: 0 0 10px var(--main-color); }
+
+/* Contact Element Styling */
+.contact-container { max-width: 600px; margin: auto; text-align: center; }
+.email-text { font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--main-color); }
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+.contact-form input, .contact-form textarea {
+    width: 100%; padding: 1rem; background: var(--second-bg-color); border: 1px solid #334155; border-radius: 0.5rem; color: var(--text-color); font-size: 1rem;
+}
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--main-color); }
+
+footer { text-align: center; padding: 2rem; background: transparent; border-top: 1px solid #334155; color: #64748b; }
+
+/* Responsive Query Layout */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .menu-btn { display: block; }
+    .home-section { flex-direction: column-reverse; justify-content: center; gap: 30px; padding: 4rem 7% !important; }
+    .home-image img { width: 260px; height: 260px; }
+    .cert-card { flex-direction: column; gap: 1rem; }
+}
+
+/* Sabhi dibbo ka main container */
+.scores-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Premium Rounded Box Design (सभी के लिए एक जैसा) */
+.score-card {
+    flex: 1;
+    min-width: 140px;
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 22px 16px;
+    border-radius: 19px; 
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover Effect: माउस जाने या क्लिक होने पर ही नीली बॉर्डर आएगी */
+.score-card:hover, .score-card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+    border-color: #38BDF8 !important;
+}
+
+.score-value {
+    font-size: 1.8rem; 
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.score-label {
+    font-size: 0.75rem;
+    color: #94a3b8; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* सुधारा गया: CGPA कार्ड की परमानेंट नीली बॉर्डर और कलर हटा दिया गया */
+.score-card.main-cgpa {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px);
+}
+
+/* जब CGPA पर होवर करेंगे तब उसका नंबर नीला चमकेगा */
+.score-card.main-cgpa:hover .score-value {
+    color: #38BDF8; 
+}
+
+/* Photo Box Setup */
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 360px; 
+    height: 360px; 
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid #38bdf8; 
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3); 
+    transition: transform 0.4s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Particles Canvas Setup */
+/* 🌌 एडवांस फ्यूचरिस्टिक डिजिटल बैकग्राउंड */
+#space-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* यह बाकी कंटेंट के पीछे रहेगा */
+    background: radial-gradient(circle at center, #0c102b 0%, #040614 100%);
+    pointer-events: none; /* इससे आपकी वेबसाइट के बटन्स और लिंक्स पर क्लिक करने में कोई दिक्कत नहीं होगी */
+}
+/* लोगो इमेज का कंटेनर */
+.logo-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* लोगो की साइज और उसे गोल (Circle) बनाने का स्टाइल */
+.nav-logo {
+    width: 45px;        /* फिक्स चौड़ाई */
+    height: 45px;       /* फिक्स लंबाई (width और height बराबर होने से परफेक्ट सर्कल बनेगा) */
+    border-radius: 50%; /* इस लाइन से आपका लोगो एकदम गोल हो जाएगा */
+    object-fit: cover;  /* इससे इमेज गोल फ्रेम में बिना खिंचे एकदम परफेक्ट फिट होगी */
+    border: 2px solid rgba(56, 189, 248, 0.4); /* आपकी थीम से मैच करती हल्की नीली बॉर्डर */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* होवर इफेक्ट: माउस ले जाने पर बॉर्डर चमकेगी और लोगो हल्का सा बड़ा होगा */
+.nav-logo:hover {
+    transform: scale(1.05);
+    border-color: #38BDF8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6); /* शानदार ग्लोइंग इफेक्ट */
+}
+.home-image img {
+    width: 360px; 
+    height: 360px; 
+    object-fit: cover;
+    
+    /* ⚡ चेहरा कटने से रोकने के लिए यह सबसे ज़रूरी लाइन है */
+    object-position: center 15%; 
+    
+    border-radius: 50%; 
+    border: 4px solid #38bdf8; 
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3); 
+    transition: transform 0.4s ease;
+}
